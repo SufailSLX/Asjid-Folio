@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Intro from './pages/Intro/Intro';
 import Home from './pages/Home/Home';
+import Bio from './pages/Bio/Bio';
 
 export default function App() {
   const [introComplete, setIntroComplete] = useState(false);
@@ -10,7 +11,11 @@ export default function App() {
       {!introComplete ? (
         <Intro onComplete={() => setIntroComplete(true)} />
       ) : (
-        <Home />
+        <div className="relative w-full">
+          <Home />
+
+          <Bio />
+        </div>
       )}
     </>
   );

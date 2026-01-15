@@ -45,10 +45,10 @@ const Home = () => {
 
             {/* Top navigation */}
             <header
-                className="relative z-20 flex items-center justify-between px-10 pt-4 text-[0.55rem] tracking-[0.32em] uppercase text-neutral-100/80"
+                className="fixed top-0 w-full z-50 flex items-center justify-between px-10 pt-4 text-[0.55rem] tracking-[0.32em] uppercase text-neutral-100/80"
             >
                 <div className="font-semibold" style={{ display: 'inline-block' }}>
-                    <Shuffle text="ASJID VASEEM" className="text-[0.65rem] hover:scale-110 transition-transform duration-300 cursor-default" />
+                    <Shuffle text="ASJID VASEEM" className="text-[0.65rem] hover:scale-110 transition-transform duration-300 cursor-default font-bold" />
                 </div>
                 <nav className="flex items-center gap-8">
                     {['About', 'Works', 'Projects', 'Contact'].map((item) => (
