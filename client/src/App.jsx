@@ -4,6 +4,7 @@ import Home from './pages/Home/Home';
 import Bio from './pages/Bio/Bio';
 
 import About from './pages/About/About';
+import Projects from './pages/projects/Projects';
 
 export default function App() {
   const [introComplete, setIntroComplete] = useState(false);
@@ -18,6 +19,7 @@ export default function App() {
 
           <Bio />
           <About />
+          <Projects />
         </div>
       )}
     </>
