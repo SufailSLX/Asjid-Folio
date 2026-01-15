@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import heroRock from '../../assets/into-img.png'
+import heroRock from '../../assets/intro-img1.jpg'
 
 import Shuffle from './TextEffects'
 

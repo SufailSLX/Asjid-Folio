@@ -148,7 +148,7 @@ const About = () => {
                         <div className="text-center md:max-w-xl">
                             <h3 className="text-white text-sm md:text-base font-medium leading-relaxed uppercase tracking-wide flex flex-col items-center">
                                 <ScrollScatterText
-                                    text="Hi, I’m Asjid Vaseem. I’m a digital marketer and brand strategist ."
+                                    text="I’m Asjid Vaseem. I’m a digital marketer and brand strategist."
                                     progress={smoothProgress}
                                     className="mb-1"
                                 />
