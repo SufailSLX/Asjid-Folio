@@ -79,6 +79,65 @@ const Contact = () => {
                     </div>
                 </form>
             </section>
+
+            {/* Identity / footer section */}
+            <section className="relative z-10 w-full border-t border-black/10 px-6 pb-16 pt-16">
+                <div className="mx-auto flex w-full max-w-6xl flex-col items-center text-center">
+                    {/* Top nav labels */}
+                    <nav className="mb-10 flex flex-wrap items-center justify-center gap-10 text-[0.6rem] uppercase tracking-[0.28em] text-black/70">
+                        <span>About</span>
+                        <span>Awards</span>
+                        <span>Works</span>
+                        <span>Expertise</span>
+                    </nav>
+
+                    {/* Name headline */}
+                    <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-none tracking-[0.18em] text-black">
+                        ASJID VASEEM
+                    </h2>
+
+                    {/* Social links */}
+                    <div className="mt-6 flex flex-wrap items-center justify-center gap-8 text-[0.65rem] uppercase tracking-[0.26em] text-black/75">
+                        <button className="border-b border-black/40 pb-0.5">LinkedIn</button>
+                        <button className="border-b border-black/40 pb-0.5">Telegram</button>
+                        <button className="border-b border-black/40 pb-0.5">WhatsApp</button>
+                    </div>
+
+                    {/* Email */}
+                    <p className="mt-6 text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-black">
+                        ASJIDVASEEM@GMAIL.COM
+                    </p>
+
+                    {/* Big role title */}
+                    <div className="mt-16 w-full text-left pl-26 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium tracking-[0.08em] text-black/90">
+                        <h3 className="leading-tight">CREATIVE DIGITAL MARKETER</h3>
+                    </div>
+
+                    {/* Bottom meta row */}
+                    <div className="mt-16 flex w-full flex-col items-center justify-between gap-6 text-[0.55rem] uppercase tracking-[0.18em] text-black/60 sm:flex-row">
+                        <div className="text-left max-w-xs">
+                            <p>2025. All rights reserved. ASJID VASEEM.</p>
+                            <p>Any reproduction, distribution, or use of the materials without permission is prohibited.</p>
+                        </div>
+
+                        <div className="text-center">
+                            <span>WEBSITE DESIGN - </span>
+                            <a
+                                href="#"
+                                className="border-b border-black/40 pb-0.5 text-black hover:border-black hover:text-black"
+                            >
+                                WWW.ASJIDVASEEM.COM
+                            </a>
+                        </div>
+
+                        <div className="flex justify-end w-full sm:w-auto">
+                            <button className="rounded-full border border-black/60 px-6 py-1.5 text-[0.55rem] tracking-[0.22em] uppercase text-black/80 hover:bg-black hover:text-[#c2cab8]">
+                                DEV BY SUFAIL
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
     )
 }
