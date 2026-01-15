@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { motion } from 'framer-motion'
 import heroRock from '../../assets/intro-img1.jpg'
 
 import Shuffle from './TextEffects'
@@ -72,6 +73,14 @@ const Home = () => {
                     <Shuffle text="ESSENCE." className="text-[0.65rem] hover:scale-110 transition-transform duration-300 cursor-default" />
                 </div>
             </section>
+
+            {/* Dark overlay for smooth transition */}
+            <motion.div
+                initial={{ opacity: 5 }}
+                animate={{ opacity: 0 }}
+                transition={{ duration: 6.2, ease: "easeOut" }}
+                className="fixed inset-0 z-[100] bg-black pointer-events-none"
+            />
         </main>
     )
 }

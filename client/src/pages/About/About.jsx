@@ -103,7 +103,7 @@ const About = () => {
 
                 {/* --- DECORATIVE TAGS --- */}
                 <div className="absolute top-28 left-8 text-xs text-gray-500 font-mono z-20">(ABOUT.)</div>
-                <div className="absolute top-28 right-8 text-xs text-gray-500 font-mono z-20">[ N.002 ]</div>
+                <div className="absolute top-28 right-8 text-xs text-gray-500 font-mono z-20"></div>
 
                 {/* Vertical Line Marker */}
                 <div className="absolute top-36 right-8 h-12 w-[1px] bg-gray-600 z-20"></div>
