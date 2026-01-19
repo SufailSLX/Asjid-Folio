@@ -1,4 +1,5 @@
 import React from 'react'
+import PaperBg from '../../assets/Paper-bg.jpeg'
 
 const budgets = ['5K - 10K', '10K - 20K', 'more']
 
@@ -8,7 +9,10 @@ const Contact = () => {
             {/* Marble-ish background overlay */}
             <div className="pointer-events-none absolute inset-0">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.12),_transparent_60%)]" />
-                <div className="absolute inset-0 mix-blend-multiply opacity-[0.22] bg-[url('https://images.pexels.com/photos/129731/pexels-photo-129731.jpeg?auto=compress&cs=tinysrgb&w=1600')] bg-cover bg-center" />
+                <div
+                    className="absolute inset-0 mix-blend-multiply opacity-[0.22] bg-cover bg-center"
+                    style={{ backgroundImage: `url(${PaperBg})` }}
+                />
             </div>
 
             {/* Content wrapper */}
@@ -98,14 +102,32 @@ const Contact = () => {
 
                     {/* Social links */}
                     <div className="mt-6 flex flex-wrap items-center justify-center gap-8 text-[0.65rem] uppercase tracking-[0.26em] text-black/75">
-                        <button className="border-b border-black/40 pb-0.5">LinkedIn</button>
-                        <button className="border-b border-black/40 pb-0.5">Telegram</button>
-                        <button className="border-b border-black/40 pb-0.5">WhatsApp</button>
+                       <a
+  href="https://www.linkedin.com/in/your-username/"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button className="border-b border-black/40 pb-0.5">
+    LinkedIn
+  </button>
+</a>
+
+                        {/* <button className="border-b border-black/40 pb-0.5">Telegram</button> */}
+                    <a
+  href="https://wa.me/918921982338"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button className="border-b border-black/40 pb-0.5">
+    WhatsApp
+  </button>
+</a>
+
                     </div>
 
                     {/* Email */}
                     <p className="mt-6 text-[0.7rem] font-semibold uppercase tracking-[0.22em] text-black">
-                        ASJIDVASEEM@GMAIL.COM
+                        ASJIDVASEEM10@GMAIL.COM
                     </p>
 
                     {/* Big role title */}
@@ -116,7 +138,7 @@ const Contact = () => {
                     {/* Bottom meta row */}
                     <div className="mt-16 flex w-full flex-col items-center justify-between gap-6 text-[0.55rem] uppercase tracking-[0.18em] text-black/60 sm:flex-row">
                         <div className="text-left max-w-xs">
-                            <p>2025. All rights reserved. ASJID VASEEM.</p>
+                            <p>2026. All rights reserved. ASJID VASEEM.</p>
                             <p>Any reproduction, distribution, or use of the materials without permission is prohibited.</p>
                         </div>
 
@@ -131,9 +153,9 @@ const Contact = () => {
                         </div>
 
                         <div className="flex justify-end w-full sm:w-auto">
-                            <button className="rounded-full border border-black/60 px-6 py-1.5 text-[0.55rem] tracking-[0.22em] uppercase text-black/80 hover:bg-black hover:text-[#c2cab8]">
+                            {/* <button className="rounded-full border border-black/60 px-6 py-1.5 text-[0.55rem] tracking-[0.22em] uppercase text-black/80 hover:bg-black hover:text-[#c2cab8]">
                                 DEV BY SUFAIL
-                            </button>
+                            </button> */}
                         </div>
                     </div>
                 </div>
