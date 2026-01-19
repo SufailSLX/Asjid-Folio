@@ -1,5 +1,5 @@
 import React from 'react'
-import PaperBg from '../../assets/Paper-bg.jpeg'
+const PaperBg = '/images/Paper-bg.jpeg'
 
 const budgets = ['5K - 10K', '10K - 20K', 'more']
 
