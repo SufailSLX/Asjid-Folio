@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Toaster } from 'react-hot-toast';
 import Intro from './pages/Intro/Intro';
 import Home from './pages/Home/Home';
 import Bio from './pages/Bio/Bio';
@@ -17,6 +18,7 @@ export default function App() {
         <Intro onComplete={() => setIntroComplete(true)} />
       ) : (
         <div className="relative w-full">
+          <Toaster position="top-center" reverseOrder={false} />
           <Home />
 
           <Bio />

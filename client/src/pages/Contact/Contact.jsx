@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react'
 import emailjs from '@emailjs/browser'
+import toast from 'react-hot-toast'
 const PaperBg = '/images/Paper-bg.jpeg'
 
 const budgets = ['5K - 10K', '10K - 20K', 'more']
@@ -16,18 +17,18 @@ const Contact = () => {
         // NOTE: You need to create an account at https://www.emailjs.com/
         // and get your Service ID, Template ID, and Public Key.
         // Replace the placeholders below with your actual keys.
-        const SERVICE_ID = '';
-        const TEMPLATE_ID = '';
-        const PUBLIC_KEY = '';
+        const SERVICE_ID = 'service_e6frbai';
+        const TEMPLATE_ID = 'template_n4szoxi';
+        const PUBLIC_KEY = 'ttvCklLjF4f7qtn6w';
 
         emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
             .then((result) => {
                 console.log(result.text);
-                alert("Message Confirmed! We will get back to you soon.");
+                toast.success("Message Confirmed! We will get back to you soon.");
                 e.target.reset();
             }, (error) => {
                 console.log(error.text);
-                alert("Failed to send message. Please check your configuration or try again later.");
+                toast.error("Failed to send message. Please check your configuration or try again later.");
             })
             .finally(() => setLoading(false));
     };
