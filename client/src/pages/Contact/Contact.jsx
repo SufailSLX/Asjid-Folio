@@ -1,9 +1,37 @@
-import React from 'react'
+import React, { useRef, useState } from 'react'
+import emailjs from '@emailjs/browser'
 const PaperBg = '/images/Paper-bg.jpeg'
 
 const budgets = ['5K - 10K', '10K - 20K', 'more']
 
 const Contact = () => {
+    const form = useRef();
+    const [selectedBudget, setSelectedBudget] = useState(budgets[0]);
+    const [loading, setLoading] = useState(false);
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+        setLoading(true);
+
+        // NOTE: You need to create an account at https://www.emailjs.com/
+        // and get your Service ID, Template ID, and Public Key.
+        // Replace the placeholders below with your actual keys.
+        const SERVICE_ID = '';
+        const TEMPLATE_ID = '';
+        const PUBLIC_KEY = '';
+
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
+            .then((result) => {
+                console.log(result.text);
+                alert("Message Confirmed! We will get back to you soon.");
+                e.target.reset();
+            }, (error) => {
+                console.log(error.text);
+                alert("Failed to send message. Please check your configuration or try again later.");
+            })
+            .finally(() => setLoading(false));
+    };
+
     return (
         <main id="contact" className="relative min-h-screen w-full overflow-hidden bg-[#c2cab8] text-black">
             {/* Marble-ish background overlay */}
@@ -30,10 +58,12 @@ const Contact = () => {
                 <div className="mb-12 md:mb-50 h-px w-16 bg-black" />
 
                 {/* Form */}
-                <form className="w-full space-y-3 text-[0.7rem] uppercase tracking-[0.2em] text-black/70">
+                <form ref={form} onSubmit={sendEmail} className="w-full space-y-3 text-[0.7rem] uppercase tracking-[0.2em] text-black/70">
                     <div>
                         <label className="block text-[0.6rem] mb-3">YOUR NAME*</label>
                         <input
+                            required
+                            name="user_name"
                             type="text"
                             className="w-full border-b border-black/60 bg-transparent pb-2 text-[0.7rem] tracking-[0.15em] outline-none focus:border-black"
                         />
@@ -42,6 +72,8 @@ const Contact = () => {
                     <div>
                         <label className="block text-[0.6rem] mb-3">YOUR EMAIL*</label>
                         <input
+                            required
+                            name="user_email"
                             type="email"
                             className="w-full border-b border-black/60 bg-transparent pb-2 text-[0.7rem] tracking-[0.15em] outline-none focus:border-black"
                         />
@@ -50,6 +82,8 @@ const Contact = () => {
                     <div>
                         <label className="block text-[0.6rem] mb-3">YOUR MESSAGE*</label>
                         <textarea
+                            required
+                            name="message"
                             rows={3}
                             className="w-full resize-none border-b border-black/60 bg-transparent pb-2 text-[0.7rem] tracking-[0.15em] outline-none focus:border-black"
                         />
@@ -57,12 +91,14 @@ const Contact = () => {
 
                     <div className="pt-4">
                         <label className="block text-[0.6rem] mb-4">YOUR BUDGET (INR)</label>
+                        <input type="hidden" name="budget" value={selectedBudget} />
                         <div className="flex flex-wrap items-center gap-6 text-[0.65rem] tracking-[0.2em]">
-                            {budgets.map((item, index) => (
+                            {budgets.map((item) => (
                                 <button
                                     key={item}
                                     type="button"
-                                    className={`rounded-full border px-6 py-2 transition-colors duration-150 ${index === 0
+                                    onClick={() => setSelectedBudget(item)}
+                                    className={`rounded-full border px-6 py-2 transition-colors duration-150 ${selectedBudget === item
                                         ? 'border-black bg-black text-[#c2cab8] shadow-[0_10px_30px_rgba(0,0,0,0.25)]'
                                         : 'border-black/40 bg-transparent text-black/80 hover:border-black hover:bg-black hover:text-[#c2cab8]'
                                         }`}
@@ -76,9 +112,10 @@ const Contact = () => {
                     <div className="pt-6 flex justify-center">
                         <button
                             type="submit"
-                            className="rounded-full border border-black px-12 py-2 text-[0.65rem] uppercase tracking-[0.22em] text-black hover:bg-black hover:text-[#c2cab8] transition-colors duration-150"
+                            disabled={loading}
+                            className="rounded-full border border-black px-12 py-2 text-[0.65rem] uppercase tracking-[0.22em] text-black hover:bg-black hover:text-[#c2cab8] transition-colors duration-150 disabled:opacity-50"
                         >
-                            Confirm
+                            {loading ? 'Sending...' : 'Confirm'}
                         </button>
                     </div>
                 </form>
