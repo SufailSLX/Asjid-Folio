@@ -49,7 +49,7 @@ const Home = () => {
                 className="fixed top-0 w-full z-50 flex flex-col md:flex-row items-center justify-between px-6 md:px-10 pt-4 md:pt-6 text-[0.55rem] tracking-[0.32em] uppercase text-neutral-100/80 transition-all duration-300"
             >
                 <div className="font-semibold mb-4 md:mb-0" style={{ display: 'inline-block' }}>
-                    <Shuffle text="ASJID VASEEM" className="text-[0.6rem] hover:scale-110 transition-transform duration-300 cursor-default font-black" />
+                    <Shuffle text="ASJID VAZEEM" className="text-[0.6rem] hover:scale-110 transition-transform duration-300 cursor-default font-black" />
                 </div>
 
                 <nav className="flex flex-wrap justify-center items-center gap-6 md:gap-18 md:mr-22">

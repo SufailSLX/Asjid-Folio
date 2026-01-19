@@ -8,7 +8,7 @@ const Bio = () => {
         "creating influence,",
         "and driving real business growth.",
         "BY",
-        "ASJID VASEEM"
+        "ASJID VAZEEM"
     ];
 
     // 1. Text Container: Controls the staggering of the lines
