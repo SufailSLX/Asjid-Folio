@@ -1,17 +1,17 @@
 import React from 'react'
 
 const awards = [
-    {  org: 'Digital Marketing Campaigns', desc: 'LEAD GENERATION' },
-    {  org: 'GYMKHAANA', desc: 'Social Media Management' },
-    {  org: 'DBC Corporations', desc: 'Branding & Creatives' },
-    {  org: 'SHOEVERSE', desc: 'SPOIFY WEB' },
-    {  org: 'BOLSHEVICS', desc: 'WOO-COMMERCE' },
-    {  org: 'ALACLUB', desc: 'SHOPIFY WEB' },
+    { org: 'Digital Marketing Campaigns', desc: 'LEAD GENERATION' },
+    { org: 'GYMKHAANA', desc: 'Social Media Management' },
+    { org: 'DBC Corporations', desc: 'Branding & Creatives' },
+    { org: 'SHOEVERSE', desc: 'SPOIFY WEB' },
+    { org: 'BOLSHEVICS', desc: 'WOO-COMMERCE' },
+    { org: 'ALACLUB', desc: 'SHOPIFY WEB' },
 ]
 
 const Projects = () => {
     return (
-        <main className="relative min-h-screen w-full overflow-hidden bg-[#c2cab8] text-black">
+        <main id="projects" className="relative min-h-screen w-full overflow-hidden bg-[#c2cab8] text-black">
             {/* Giant 18 background mark */}
             <div className="pointer-events-none absolute inset-0 flex items-center justify-center opacity-[0.13]">
                 <div className="relative w-[70vw] max-w-5xl">

@@ -55,6 +55,13 @@ const Home = () => {
                     {['About', 'Works', 'Projects', 'Contact'].map((item) => (
                         <button
                             key={item}
+                            onClick={() => {
+                                const sectionId = item.toLowerCase();
+                                const element = document.getElementById(sectionId);
+                                if (element) {
+                                    element.scrollIntoView({ behavior: 'smooth' });
+                                }
+                            }}
                             className="transition-colors duration-150 hover:text-white/100 text-[0.7rem] tracking-[0.3em] group"
                         >
                             <Shuffle text={item} className="group-hover:scale-110 transition-transform duration-300 cursor-pointer" />

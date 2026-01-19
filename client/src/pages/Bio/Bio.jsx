@@ -189,7 +189,7 @@ const Bio = () => {
                 transition={{ duration: 1, delay: 0.5 }}
                 className="absolute bottom-8 right-8 text-[10px] font-mono tracking-widest"
             >
-                BY SUFAIL
+                {/* BY SUFAIL */}
             </motion.div>
 
             {/* Gradient Overlay */}

@@ -5,7 +5,7 @@ const budgets = ['5K - 10K', '10K - 20K', 'more']
 
 const Contact = () => {
     return (
-        <main className="relative min-h-screen w-full overflow-hidden bg-[#c2cab8] text-black">
+        <main id="contact" className="relative min-h-screen w-full overflow-hidden bg-[#c2cab8] text-black">
             {/* Marble-ish background overlay */}
             <div className="pointer-events-none absolute inset-0">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_rgba(255,255,255,0.12),_transparent_60%)]" />
@@ -102,26 +102,26 @@ const Contact = () => {
 
                     {/* Social links */}
                     <div className="mt-6 flex flex-wrap items-center justify-center gap-8 text-[0.65rem] uppercase tracking-[0.26em] text-black/75">
-                       <a
-  href="https://www.linkedin.com/in/your-username/"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <button className="border-b border-black/40 pb-0.5">
-    LinkedIn
-  </button>
-</a>
+                        <a
+                            href="https://www.linkedin.com/in/asjid-vaseem-6a956a371/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <button className="border-b border-black/40 pb-0.5">
+                                LinkedIn
+                            </button>
+                        </a>
 
                         {/* <button className="border-b border-black/40 pb-0.5">Telegram</button> */}
-                    <a
-  href="https://wa.me/918921982338"
-  target="_blank"
-  rel="noopener noreferrer"
->
-  <button className="border-b border-black/40 pb-0.5">
-    WhatsApp
-  </button>
-</a>
+                        <a
+                            href="https://wa.me/918921982338"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <button className="border-b border-black/40 pb-0.5">
+                                WhatsApp
+                            </button>
+                        </a>
 
                     </div>
 
@@ -136,26 +136,10 @@ const Contact = () => {
                     </div>
 
                     {/* Bottom meta row */}
-                    <div className="mt-16 flex w-full flex-col items-center justify-between gap-6 text-[0.55rem] uppercase tracking-[0.18em] text-black/60 sm:flex-row">
-                        <div className="text-left max-w-xs">
+                    <div className="mt-16 flex w-full flex-col items-center justify-center gap-6 text-[0.55rem] uppercase tracking-[0.18em] text-black/60">
+                        <div className="text-center">
                             <p>2026. All rights reserved. ASJID VASEEM.</p>
                             <p>Any reproduction, distribution, or use of the materials without permission is prohibited.</p>
-                        </div>
-
-                        <div className="text-center">
-                            <span>WEBSITE DESIGN - </span>
-                            <a
-                                href="#"
-                                className="border-b border-black/40 pb-0.5 text-black hover:border-black hover:text-black"
-                            >
-                                WWW.ASJIDVASEEM.COM
-                            </a>
-                        </div>
-
-                        <div className="flex justify-end w-full sm:w-auto">
-                            {/* <button className="rounded-full border border-black/60 px-6 py-1.5 text-[0.55rem] tracking-[0.22em] uppercase text-black/80 hover:bg-black hover:text-[#c2cab8]">
-                                DEV BY SUFAIL
-                            </button> */}
                         </div>
                     </div>
                 </div>

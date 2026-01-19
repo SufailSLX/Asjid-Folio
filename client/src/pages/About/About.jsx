@@ -96,7 +96,7 @@ const About = () => {
     const smoothProgress = useSpring(scrollYProgress, { stiffness: 100, damping: 30, restDelta: 0.001 });
 
     return (
-        <div ref={containerRef} className="relative w-full min-h-[300vh] bg-[#0a0a0a] text-white font-sans">
+        <div id="about" ref={containerRef} className="relative w-full min-h-[300vh] bg-[#0a0a0a] text-white font-sans">
 
             {/* Sticky Container - Pins content to view while scrolling happens */}
             <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col items-center justify-center">

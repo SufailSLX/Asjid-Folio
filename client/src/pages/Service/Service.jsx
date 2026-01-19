@@ -95,7 +95,7 @@ const Service = () => {
     }
 
     return (
-        <main className="relative min-h-screen w-full overflow-hidden bg-[#060607] text-white">
+        <main id="works" className="relative min-h-screen w-full overflow-hidden bg-[#060607] text-white">
             {/* Textured dark background gradient */}
             <div className="pointer-events-none absolute inset-0">
                 <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_#181818,_#050506)]" />
