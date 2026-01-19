@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
-import heroRock from '../../assets/intro-img1.jpg'
+const heroRock = '/images/intro-img1.jpg'
 
 import Shuffle from './TextEffects'
 

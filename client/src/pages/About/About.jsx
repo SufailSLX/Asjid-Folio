@@ -131,7 +131,7 @@ const About = () => {
                     className="relative z-10 w-64 h-80 md:w-80 md:h-96 grayscale hover:grayscale-0 transition-all duration-500 "
                 >
                     <img
-                        src="src/assets/asjid.png"
+                        src="/images/asjid.png"
                         alt="Portrait"
                         className="object-cover w-full h-82"
                     />
