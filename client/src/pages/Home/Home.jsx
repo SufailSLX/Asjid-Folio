@@ -46,12 +46,13 @@ const Home = () => {
 
             {/* Top navigation */}
             <header
-                className="fixed top-0 w-full z-50 flex items-center justify-between px-10 pt-4 text-[0.55rem] tracking-[0.32em] uppercase text-neutral-100/80"
+                className="fixed top-0 w-full z-50 flex flex-col md:flex-row items-center justify-between px-6 md:px-10 pt-4 md:pt-6 text-[0.55rem] tracking-[0.32em] uppercase text-neutral-100/80 transition-all duration-300"
             >
-                <div className="font-semibold" style={{ display: 'inline-block' }}>
-                    <Shuffle text="ASJID VASEEM" className="text-[0.6rem] hover:scale-110 transition-transform duration-300 cursor-default font-black" />
+                <div className="font-semibold mb-4 md:mb-0" style={{ display: 'inline-block' }}>
+                    <Shuffle text="ASJID VAZEEM" className="text-[0.6rem] hover:scale-110 transition-transform duration-300 cursor-default font-black" />
                 </div>
-                <nav className="flex items-center gap-18 mr-22">
+
+                <nav className="flex flex-wrap justify-center items-center gap-6 md:gap-18 md:mr-22">
                     {['About', 'Works', 'Projects', 'Contact'].map((item) => (
                         <button
                             key={item}
@@ -62,9 +63,10 @@ const Home = () => {
                                     element.scrollIntoView({ behavior: 'smooth' });
                                 }
                             }}
-                            className="transition-colors duration-150 hover:text-white/100 text-[0.7rem] tracking-[0.3em] group"
+                            className="transition-colors duration-150 hover:text-white/100 text-[0.6rem] md:text-[0.7rem] tracking-[0.3em] group"
                         >
-                            <Shuffle text={item} className="group-hover:scale-110 transition-transform duration-300 cursor-pointer" />
+                            <span className="md:hidden">{item}</span>
+                            <Shuffle text={item} className="hidden md:block group-hover:scale-110 transition-transform duration-300 cursor-pointer" />
                         </button>
                     ))}
                 </nav>
