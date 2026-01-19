@@ -82,7 +82,7 @@ const Bio = () => {
                 viewport={{ amount: 0.8 }}
                 className="absolute top-110 left-8 text-xs font-mono"
             >
-                
+
             </motion.div>
 
             <motion.div
@@ -98,7 +98,7 @@ const Bio = () => {
             </motion.div>
 
             {/* --- Main Content --- */}
-            <div className="relative z-10 max-w-2xl w-full px-8 mt-80">
+            <div className="relative z-10 max-w-2xl w-full px-8 mt-40 md:mt-80">
                 <motion.div
                     variants={containerVariants}
                     initial="hidden"

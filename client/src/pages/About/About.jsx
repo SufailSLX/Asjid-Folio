@@ -102,8 +102,8 @@ const About = () => {
             <div className="sticky top-0 h-screen w-full overflow-hidden flex flex-col items-center justify-center">
 
                 {/* --- DECORATIVE TAGS --- */}
-                <div className="absolute top-28 left-8 text-xs text-gray-500 font-mono z-20">(ABOUT.)</div>
-                <div className="absolute top-28 right-8 text-xs text-gray-500 font-mono z-20"></div>
+                <div className="absolute top-16 left-4 md:top-28 md:left-8 text-xs text-gray-500 font-mono z-20">(ABOUT.)</div>
+                <div className="absolute top-16 right-4 md:top-28 md:right-8 text-xs text-gray-500 font-mono z-20"></div>
 
                 {/* Vertical Line Marker */}
                 <div className="absolute top-36 right-8 h-12 w-[1px] bg-gray-600 z-20"></div>
@@ -138,7 +138,7 @@ const About = () => {
                 </motion.div>
 
                 {/* --- BOTTOM DESCRIPTION (SCROLL ANIMATED) --- */}
-                <div className="absolute bottom-20 w-full flex justify-center z-20 px-4">
+                <div className="absolute bottom-16 md:bottom-20 w-full flex justify-center z-20 px-4">
                     <div className="flex flex-row items-end justify-between w-full max-w-6xl">
 
                         {/* Left Line Decoration */}

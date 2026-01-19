@@ -9,7 +9,7 @@ const TEXT_COLOR = "#1A1A1A";
 // The concentric ring data
 const RINGS = [
   { text: "WORDPRESS SHOPIFY ECOMMERCE", radius: 220 },
-{ text: "SEO  SMM PERFOMANCE MARKETING", radius: 150 },
+  { text: "SEO  SMM PERFOMANCE MARKETING", radius: 150 },
   { text: "CREATIVE  DESIGN ", radius: 95 },
 ];
 
@@ -20,7 +20,7 @@ const Intro = ({ onComplete }) => {
   useEffect(() => {
     const sequence = async () => {
       // --- PHASE 1: ENTER (IMPLOSION) ---
-      
+
       // 1. Counter Animation (0 -> 100)
       const counterAnimation = animate(0, 100, {
         duration: 2.5,
@@ -32,10 +32,10 @@ const Intro = ({ onComplete }) => {
       await animate(
         "span.letter",
         {
-          x: 0, 
-          y: 0, 
-          opacity: 1, 
-          scale: 1, 
+          x: 0,
+          y: 0,
+          opacity: 1,
+          scale: 1,
           filter: "blur(0px)",
           rotate: 0,
         },
@@ -60,7 +60,7 @@ const Intro = ({ onComplete }) => {
       // 2. Explode the letters back out!
       // We manually select them to give each one a UNIQUE random exit direction
       const letterNodes = scope.current.querySelectorAll("span.letter");
-      
+
       const exitPromises = Array.from(letterNodes).map((node) => {
         // Generate random destination for "Explosion"
         const randomX = (Math.random() - 0.5) * 800; // Fly left/right
@@ -109,7 +109,7 @@ const Intro = ({ onComplete }) => {
       </div>
 
       {/* RINGS CONTAINER */}
-      <div className="relative flex items-center justify-center w-[600px] h-[600px]">
+      <div className="relative flex items-center justify-center w-[600px] h-[600px] scale-[0.55] sm:scale-75 md:scale-100">
         {RINGS.map((ring, ringIndex) => (
           <RingGroup key={ringIndex} text={ring.text} radius={ring.radius} />
         ))}
@@ -132,25 +132,25 @@ const RingGroup = ({ text, radius }) => {
             key={i}
             className="absolute flex items-center justify-center"
             style={{
-              width: "20px", 
+              width: "20px",
               height: "20px",
               transform: `rotate(${angle}deg) translateY(-${radius}px) rotate(90deg)`,
               transformOrigin: "center center",
               left: "50%",
               top: "50%",
-              marginTop: "-10px", 
-              marginLeft: "-10px", 
+              marginTop: "-10px",
+              marginLeft: "-10px",
             }}
           >
             <motion.span
               className="letter block text-[14px] uppercase"
               initial={{
-                x: (Math.random() - 0.5) * 600, 
-                y: (Math.random() - 0.5) * 600, 
+                x: (Math.random() - 0.5) * 600,
+                y: (Math.random() - 0.5) * 600,
                 opacity: 0,
                 scale: 0.5,
-                filter: "blur(12px)", 
-                rotate: (Math.random() - 0.5) * 200, 
+                filter: "blur(12px)",
+                rotate: (Math.random() - 0.5) * 200,
               }}
             >
               {char}

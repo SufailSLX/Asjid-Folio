@@ -27,7 +27,7 @@ const Contact = () => {
                 <h1 className="mb-3 text-center text-sm md:text-base tracking-[0.25em] uppercase text-black">
                     LETS MAKE YOUR PROJECT SPECIAL
                 </h1>
-                <div className="mb-50 h-px w-16 bg-black" />
+                <div className="mb-12 md:mb-50 h-px w-16 bg-black" />
 
                 {/* Form */}
                 <form className="w-full space-y-3 text-[0.7rem] uppercase tracking-[0.2em] text-black/70">
@@ -131,7 +131,7 @@ const Contact = () => {
                     </p>
 
                     {/* Big role title */}
-                    <div className="mt-16 w-full text-left pl-26 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium tracking-[0.08em] text-black/90">
+                    <div className="mt-16 w-full text-left px-4 md:pl-26 text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-medium tracking-[0.08em] text-black/90">
                         <h3 className="leading-tight">CREATIVE DIGITAL MARKETER</h3>
                     </div>
 
