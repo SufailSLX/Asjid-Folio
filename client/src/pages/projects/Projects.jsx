@@ -1,17 +1,12 @@
 import React from 'react'
 
 const awards = [
-    { times: '2X', org: 'AWWWARDS', desc: 'SITE OF THE DAY' },
-    { times: '1X', org: 'AWWWARDS', desc: 'DEVELOPER AWARD' },
-    { times: '1X', org: 'AWWWARDS', desc: 'PORTFOLIO HONORS' },
-    { times: '2X', org: 'AWWWARDS', desc: 'HONORABLE MENTION' },
-    { times: '2X', org: 'FWA', desc: 'SITE OF THE DAY' },
-    { times: '4X', org: 'GSAP', desc: 'SITE OF THE DAY' },
-    { times: '1X', org: 'CSS DESIGN AWARDS', desc: 'SITE OF THE DAY' },
-    { times: '1X', org: 'CODROPS', desc: 'CASE STUDY ARTICLE' },
-    { times: '2X', org: 'MUZLI', desc: 'TOP 100 PORTFOLIOS OF 2024, 2025' },
-    { times: '1X', org: 'MUZLI', desc: 'WEB DESIGN TRENDS 2025' },
-    { times: '1X', org: 'WD AWARDS', desc: 'SITE OF THE DAY' }
+    {  org: 'Digital Marketing Campaigns', desc: 'LEAD GENERATION' },
+    {  org: 'GYMKHAANA', desc: 'Social Media Management' },
+    {  org: 'DBC Corporations', desc: 'Branding & Creatives' },
+    {  org: 'SHOEVERSE', desc: 'SPOIFY WEB' },
+    {  org: 'BOLSHEVICS', desc: 'WOO-COMMERCE' },
+    {  org: 'ALACLUB', desc: 'SHOPIFY WEB' },
 ]
 
 const Projects = () => {
@@ -35,10 +30,10 @@ const Projects = () => {
                         MY PROJECTS
                     </h1>
                     <h1 className="text-[2.4rem] leading-tight font-semibold tracking-tight text-black">
-                        HAVE RECEIVED
+                        {/* HAVE RECEIVED */}
                     </h1>
                     <h1 className="text-[2.4rem] leading-tight font-semibold tracking-tight text-black">
-                        INTERNATIONAL RECOGNITION
+                        {/* INTERNATIONAL RECOGNITION */}
                     </h1>
                 </div>
 

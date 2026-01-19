@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react'
+import { motion } from 'framer-motion'
 import heroRock from '../../assets/intro-img1.jpg'
 
 import Shuffle from './TextEffects'
@@ -48,13 +49,13 @@ const Home = () => {
                 className="fixed top-0 w-full z-50 flex items-center justify-between px-10 pt-4 text-[0.55rem] tracking-[0.32em] uppercase text-neutral-100/80"
             >
                 <div className="font-semibold" style={{ display: 'inline-block' }}>
-                    <Shuffle text="ASJID VASEEM" className="text-[0.65rem] hover:scale-110 transition-transform duration-300 cursor-default font-bold" />
+                    <Shuffle text="ASJID VASEEM" className="text-[0.6rem] hover:scale-110 transition-transform duration-300 cursor-default font-black" />
                 </div>
-                <nav className="flex items-center gap-8">
+                <nav className="flex items-center gap-18 mr-22">
                     {['About', 'Works', 'Projects', 'Contact'].map((item) => (
                         <button
                             key={item}
-                            className="transition-colors duration-150 hover:text-white/100 text-[0.52rem] tracking-[0.3em] group"
+                            className="transition-colors duration-150 hover:text-white/100 text-[0.7rem] tracking-[0.3em] group"
                         >
                             <Shuffle text={item} className="group-hover:scale-110 transition-transform duration-300 cursor-pointer" />
                         </button>
@@ -72,6 +73,14 @@ const Home = () => {
                     <Shuffle text="ESSENCE." className="text-[0.65rem] hover:scale-110 transition-transform duration-300 cursor-default" />
                 </div>
             </section>
+
+            {/* Dark overlay for smooth transition */}
+            <motion.div
+                initial={{ opacity: 5 }}
+                animate={{ opacity: 0 }}
+                transition={{ duration: 6.2, ease: "easeOut" }}
+                className="fixed inset-0 z-[100] bg-black pointer-events-none"
+            />
         </main>
     )
 }

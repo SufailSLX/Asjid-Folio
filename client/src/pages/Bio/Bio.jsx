@@ -82,7 +82,7 @@ const Bio = () => {
                 viewport={{ amount: 0.8 }}
                 className="absolute top-110 left-8 text-xs font-mono"
             >
-                [ N_001 ]
+                
             </motion.div>
 
             <motion.div

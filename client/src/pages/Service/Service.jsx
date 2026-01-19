@@ -1,11 +1,11 @@
 import React, { useEffect, useState } from 'react'
 
 const clients = [
-    { id: 1, label: 'OLHA LAZARIEVA', align: 'left', position: 'top' },
-    { id: 2, label: 'MAX MILKIN', align: 'right', position: 'top' },
-    { id: 3, label: 'TWO CAPITALS STUDIO', align: 'left', position: 'middle' },
-    { id: 4, label: 'RAINE ARCHITECTS', align: 'right', position: 'middle' },
-    { id: 5, label: 'MOSAIC OF CULTURES', align: 'center', position: 'bottom' }
+    { id: 1, label: 'SOCIAL MEDIA MARKETING', align: 'left', position: 'top' },
+    { id: 2, label: 'SEO', align: 'right', position: 'top' },
+    { id: 3, label: 'PERFOMANCE MARKETING', align: 'left', position: 'middle' },
+    { id: 4, label: 'WEB DESIGN', align: 'right', position: 'middle' },
+    { id: 5, label: 'BRANDING & CREATIVES', align: 'center', position: 'bottom' }
 ]
 
 const Service = () => {
@@ -115,7 +115,7 @@ const Service = () => {
                     style={textTransform}
                 >
                     <p>SOME OF THE LATEST</p>
-                    <p>PROJECTS</p>
+                    <p>SERVICE'S</p>
                 </div>
 
                 {/* Client labels with lines */}
@@ -130,18 +130,18 @@ const Service = () => {
                     {/* Top row: (EXPERTISE.) label and index */}
                     <div className="mb-16 flex w-full items-center justify-between text-[0.55rem] uppercase tracking-[0.3em]">
                         <span className="text-white/55">( EXPERTISE. )</span>
-                        <span className="text-white/55">[ N.005 ]</span>
+                        <span className="text-white/55"></span>
                     </div>
 
                     {/* Disciplines row */}
                     <div className="mb-16 flex flex-wrap items-center justify-center gap-6 text-center text-[0.6rem] uppercase tracking-[0.26em] text-white/80">
-                        <span>/ UX/UI DESIGN</span>
+                        <span>/ SMM</span>
                         <span className="text-white/40">•</span>
                         <span>/ WEB DESIGN</span>
                         <span className="text-white/40">•</span>
                         <span>/ DEVELOPMENT</span>
                         <span className="text-white/40">•</span>
-                        <span>/ 3D GRAPHICS</span>
+                        <span>/ PERFOMANCE MARKETING</span>
                     </div>
 
                     {/* Category pills */}
@@ -175,14 +175,10 @@ const Service = () => {
                     {/* Stack of tools / technologies */}
                     <div className="mt-20 flex justify-center">
                         <ul className="space-y-1 text-center text-[0.55rem] uppercase tracking-[0.22em] text-white/60">
-                            <li>HTML5</li>
-                            <li>CSS3 (SCSS, SASS)</li>
-                            <li>JAVASCRIPT</li>
-                            <li>GSAP</li>
-                            <li>THREE.JS</li>
-                            <li>REACT</li>
-                            <li>REACT-THREE-FIBER</li>
-                            <li>BLENDER</li>
+                            <li>GOOGLE ADS</li>
+                            <li>META ADS</li>
+                            <li>SHOPIFY</li>
+                            <li>CANVA</li>
                             <li>WORDPRESS</li>
                         </ul>
                     </div>
